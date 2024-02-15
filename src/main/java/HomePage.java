@@ -2,12 +2,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BaseClass{
-    @FindBy(xpath = "//a[@_sp=\"p4375194.m1379.l3250\"][position()=1]")
-    WebElement motors;
-    String clickMotors(){
-        motors.click();
-        return driver.getCurrentUrl();
+    @FindBy(xpath = "//input[@id=\"gh-ac\"]")
+    WebElement searchBox;
+    @FindBy(xpath = "//input[@id=\"gh-btn\"]")
+    WebElement searchBtn;
 
+    public String typeSearch(String type){
+        searchBox.sendKeys(type);
+        return driver.getCurrentUrl();
     }
+public String clickSearchBtn(String type){
+        searchBox.sendKeys(type);
+        searchBtn.click();
+        return driver.getCurrentUrl();
+}
 
 }
