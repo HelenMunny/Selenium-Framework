@@ -7,6 +7,7 @@ public class BaseClass {
    public void invokeBrowser(String url){
        System.setProperty("webdriver.jdk.factory","jdk-http-client");
        driver = new ChromeDriver();
+       driver.manage().window().maximize();
        driver.get(url);
    }
 
