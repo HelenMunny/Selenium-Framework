@@ -3,22 +3,16 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.Set;
 
-public class WindowClass extends BaseClass{
+public class TabClass extends BaseClass{
     @FindBy(xpath = "//button[@id=\"tabButton\"]")
-    WebElement windowBtn;
+    WebElement tabBtn;
     @FindBy(xpath = "//h1[@id=\"sampleHeading\"]")
     WebElement heading;
 
 
-    public String windowF() {
-        windowBtn.click();
-        String currWin = driver.getWindowHandle();
-        Set<String> allWins = driver.getWindowHandles();
-        for(String win:allWins){
-            if (currWin != win){
-                driver.switchTo().window(win);
-            }
-        }
+    public String tabF() {
+        tabBtn.click();
+        switchTab();
         System.out.println(heading.getText());
         return heading.getText();
     }
