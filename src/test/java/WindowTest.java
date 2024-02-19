@@ -17,7 +17,7 @@ public class WindowTest extends BaseClass{
     }
 
     @Test
-    public void windowT(){
+    public void windowT() throws InterruptedException {
         String actual = windowClass.windowF();
         String expected = "This is a sample page";
         Assert.assertEquals(actual,expected);

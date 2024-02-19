@@ -9,7 +9,7 @@ public class AlertClass extends BaseClass{
 
 public boolean alertF(){
     alertBtn.click();
-    driver.switchTo().alert().accept();
+    alertAccept();
     return alertBtn.isEnabled();
 }
 }

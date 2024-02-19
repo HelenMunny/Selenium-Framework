@@ -19,7 +19,7 @@ public class DropdownTest extends BaseClass{
 
     @Test
     public void dropdownT(){
-        String expected = "https://www.ebay.com/b/Baby-Essentials/2984/bn_1854104";
+        String expected = "https://www.ebay.com/b/Books-Magazines/267/bn_1854946";
         String actual = dropdownClass.dropdownF();
         Assert.assertEquals(actual,expected);
 }

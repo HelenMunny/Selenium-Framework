@@ -10,8 +10,7 @@ public class ActionsClass extends BaseClass{
 
 
     public String actionsF() {
-        Actions actions = new Actions(driver);
-        actions.moveToElement(electronics).perform();
+        actions(electronics);
         videogames.click();
         return driver.getCurrentUrl();
 

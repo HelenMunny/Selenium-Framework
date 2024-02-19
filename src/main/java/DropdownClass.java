@@ -11,8 +11,7 @@ public class DropdownClass extends BaseClass{
 
 
     public String dropdownF(){
-        Select select = new Select(categories);
-        select.selectByVisibleText("Baby");
+        dropdown(categories,"Books");
         searchBtn.click();
         return driver.getCurrentUrl();
     }

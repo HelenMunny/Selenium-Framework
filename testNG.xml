@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+<test name="Regression1">
+    <classes>
+        <class name="HomeTest" />
+        <class name="ActionsTest" />
+        <class name="AlertTest" />
+        <class name="DropdownTest" />
+        <class name="FindElementsTest" />
+        <class name="TabTest" />
+        <class name="WindowTest" />
+    </classes>
+</test>
+</suite>
