@@ -12,7 +12,7 @@
         <class name="DropdownTest" />
         <class name="FindElementsTest" />
         <class name="TabTest" />
-<!--        <class name="WindowTest" />-->
+        <class name="WindowTest" />
     </classes>
 </test>
 </suite>
