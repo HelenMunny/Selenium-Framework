@@ -10,7 +10,7 @@ public class ActionsTest extends BaseClass{
     @BeforeMethod
     public void setup(){
         invokeBrowser("https://ebay.com");
-       actionsClass = PageFactory.initElements(BaseClass.driver,ActionsClass.class);
+        actionsClass = PageFactory.initElements(BaseClass.driver,ActionsClass.class);
     }
 
     @AfterMethod
@@ -23,6 +23,6 @@ public void actionsT(){
 
     String actual = actionsClass.actionsF();
     String expected = "https://www.ebay.com/b/Video-Games/139973/bn_320034";
-        Assert.assertEquals(actual,expected);
+    Assert.assertEquals(actual,expected);
 }
 }
