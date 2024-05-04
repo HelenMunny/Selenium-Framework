@@ -21,7 +21,6 @@
             <version>4.13.0</version>
         </dependency>
 
-
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-http-jdk-client -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -42,8 +41,29 @@
             <artifactId>poi</artifactId>
             <version>5.2.5</version>
         </dependency>
-
-
     </dependencies>
+    <profiles>
+        <profile>
+            <id>Regression</id>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <version>3.2.5</version>
+                            <configuration>
+                                <suiteXmlFiles>
+                                    <suiteXmlFile>testNG.xml</suiteXmlFile>
+                                </suiteXmlFiles>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+    </profiles>
+
+
 
 </project>
