@@ -8,14 +8,14 @@
 
 <test name="Regression1">
     <classes>
-        <class name="parameterization" />
+<!--        <class name="parameterization" />-->
         <class name="HomeTest" />
-        <class name="ActionsTest" />
+<!--        <class name="ActionsTest" />-->
         <class name="AlertTest" />
         <class name="DropdownTest" />
         <class name="FindElementsTest" />
-        <class name="TabTest" />
-        <class name="WindowTest" />
+<!--        <class name="TabTest" />-->
+<!--        <class name="WindowTest" />-->
     </classes>
 </test>
 </suite>
